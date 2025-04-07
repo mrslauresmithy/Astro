@@ -1,155 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ASTROLinks 47</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  </head>
 
-  <body class="bg-white text-gray-800">
-    
-    <!-- Navigation Bar -->
-    <nav class="bg-gray-900 text-white p-4">
-      <div class="container mx-auto flex justify-between items-center">
-        <div class="flex items-center">
-            <div class="w-16 h-16 rounded-full bg-white bg-opacity-20 backdrop-blur-md border-2 border-white flex items-center justify-center shadow-lg hover:shadow-white transition-all duration-300 mr-3">
-              <img src="photo_2024-12-16_18-12-03.jpg" alt="ASTROLinks 47 Logo" class="w-12 h-12 rounded-full transition-transform duration-300 hover:scale-125"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASTROLinks 47</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-gray-900 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <div
+          class="w-16 h-16 rounded-full bg-white bg-opacity-20 backdrop-blur-md border-2 border-white flex items-center justify-center shadow-lg hover:shadow-white transition-all duration-300 mr-3">
+          <img src="photo_2024-12-16_18-12-03.jpg" alt="ASTROLinks 47 Logo"
+            class="w-12 h-12 rounded-full transition-transform duration-300 hover:scale-125" />
+        </div>
+        <span class="font-bold text-2xl">ASTROLinks 47</span>
+      </div>
+      <div>
+        <a href="#about" class="px-3 py-2 hover:bg-gray-700 rounded">About</a>
+        <a href="#services" class="px-3 py-2 hover:bg-gray-700 rounded">Services</a>
+        <a href="#contact" class="px-3 py-2 hover:bg-gray-700 rounded">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Tracking -->
+  <section class="relative flex items-center justify-center min-h-screen bg-gray-100 overflow-hidden">
+    <!-- Background Image -->
+    <img src="astrobackground.png" alt="ASTROLinks 47 Background"
+      class="absolute inset-0 w-full h-full object-cover opacity-50" />
+
+    <!-- Content -->
+    <div class="relative text-center z-10">
+      <!-- Circular Logo -->
+      <div
+        class="mx-auto mb-6 w-36 h-36 rounded-full bg-white bg-opacity-20 backdrop-blur-md border-4 border-white flex items-center justify-center shadow-lg">
+        <img src="photo_2024-12-16_18-12-03.jpg" alt="ASTROLinks 47 Logo" class="w-20 h-20 rounded-full" />
+      </div>
+
+      <h1 class="text-4xl font-bold text-white drop-shadow-lg">ASTROLinks 47</h1>
+      <p class="text-lg tracking-widest mb-8 text-white drop-shadow">Linking countries with unmatched delivery speed
+        🌍🚀</p>
+
+      <!-- Tracking Form -->
+      <form id="trackingForm" class="max-w-lg mx-auto">
+        <div class="mb-4">
+          <input id="trackingInput" type="text" placeholder="Tracking Number" class="w-full p-3 border rounded" />
+        </div>
+        <button type="submit" class="px-6 py-3 bg-gray-900 text-white rounded">Track</button>
+      </form>
+
+      <!-- Tracking Result -->
+      <div id="trackingResult"
+        class="mt-6 max-w-2xl mx-auto bg-white bg-opacity-70 p-6 rounded shadow text-left text-sm text-gray-900"></div>
+
+      <section class="py-20" id="about">
+        <div class="container mx-auto max-w-4xl bg-white/60 backdrop-blur-md rounded-3xl p-10 shadow-xl text-center">
+          <h2 class="text-4xl font-bold mb-6 text-gray-900">About Us</h2>
+          <p class="text-lg leading-relaxed text-gray-700">
+            <span class="font-semibold text-gray-800">ASTROLinks 47</span> is a trusted logistics company bridging
+            borders with unmatched delivery speed and accuracy. We offer scalable solutions for both personal and
+            business shipping needs — across the globe or around the corner.
+          </p>
+        </div>
+      </section>
+
+      <section class="py-20" id="services">
+        <div class="container mx-auto max-w-6xl">
+          <h2 class="text-4xl font-bold mb-10 text-center text-gray-900">Our Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
+              <i class="fas fa-shipping-fast text-4xl mb-4 text-blue-700"></i>
+              <h3 class="text-xl font-semibold mb-2">Freight Shipping</h3>
+              <p class="text-gray-700">Reliable international & local freight services ensuring on-time delivery.</p>
             </div>
-            <span class="font-bold text-2xl">ASTROLinks 47</span>
-          </div>                   
-        <div>
-          <a href="#about" class="px-3 py-2 hover:bg-gray-700 rounded">About</a>
-          <a href="#services" class="px-3 py-2 hover:bg-gray-700 rounded">Services</a>
-          <a href="#contact" class="px-3 py-2 hover:bg-gray-700 rounded">Contact</a>
+            <div class="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
+              <i class="fas fa-box-open text-4xl mb-4 text-purple-600"></i>
+              <h3 class="text-xl font-semibold mb-2">Warehousing</h3>
+              <p class="text-gray-700">Modern, secure storage facilities with real-time inventory access.</p>
+            </div>
+            <div class="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
+              <i class="fas fa-truck-loading text-4xl mb-4 text-green-600"></i>
+              <h3 class="text-xl font-semibold mb-2">Logistics Management</h3>
+              <p class="text-gray-700">End-to-end logistics and supply chain solutions built for efficiency.</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </section>
 
-    <!-- Hero Section with Tracking -->
-    <section class="relative flex items-center justify-center min-h-screen bg-gray-100 overflow-hidden">
-      <!-- Background Image -->
-      <img src="astrobackground.png" alt="ASTROLinks 47 Background" class="absolute inset-0 w-full h-full object-cover opacity-50"/>
-
-      <!-- Content -->
-      <div class="relative text-center z-10">
-        <!-- Circular Logo -->
-        <div class="mx-auto mb-6 w-36 h-36 rounded-full bg-white bg-opacity-20 backdrop-blur-md border-4 border-white flex items-center justify-center shadow-lg">
-            <img src="photo_2024-12-16_18-12-03.jpg" alt="ASTROLinks 47 Logo" class="w-20 h-20 rounded-full"/>
+      <section class="py-20" id="contact">
+        <div class="container mx-auto max-w-4xl bg-white/70 backdrop-blur-md p-10 rounded-2xl shadow-lg text-center">
+          <h2 class="text-4xl font-bold mb-6 text-gray-900">Need Help?</h2>
+          <p class="text-lg text-gray-700 mb-8">
+            Our support team is always ready to assist. Reach out via Telegram or Email anytime.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-6">
+            <a href="https://t.me/ASTROTRADEMARKED" target="_blank"
+              class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition shadow">
+              <i class="fab fa-telegram-plane mr-2"></i> Chat with us
+            </a>
+            <a href="mailto:andy.ekechi@gmail.com"
+              class="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition shadow">
+              <i class="fas fa-envelope mr-2"></i> Send us an Email
+            </a>
+          </div>
         </div>
+      </section>
 
-        <h1 class="text-4xl font-bold text-white drop-shadow-lg">ASTROLinks 47</h1>
-        <p class="text-lg tracking-widest mb-8 text-white drop-shadow">Linking countries with unmatched delivery speed 🌍🚀</p>
-
-<!-- Tracking Form -->
-<form id="trackingForm" class="max-w-lg mx-auto">
-    <div class="mb-4">
-      <input id="trackingInput" type="text" placeholder="Tracking Number" class="w-full p-3 border rounded" />
-    </div>
-    <button type="submit" class="px-6 py-3 bg-gray-900 text-white rounded">Track</button>
-  </form>
-  
-  <!-- Tracking Result -->
-  <div id="trackingResult" class="mt-6 max-w-2xl mx-auto bg-white bg-opacity-70 p-6 rounded shadow text-left text-sm text-gray-900"></div>  
-
-  <section class="py-20" id="about">
-    <div class="container mx-auto max-w-4xl bg-white/60 backdrop-blur-md rounded-3xl p-10 shadow-xl text-center">
-      <h2 class="text-4xl font-bold mb-6 text-gray-900">About Us</h2>
-      <p class="text-lg leading-relaxed text-gray-700">
-        <span class="font-semibold text-gray-800">ASTROLinks 47</span> is a trusted logistics company bridging borders with unmatched delivery speed and accuracy. We offer scalable solutions for both personal and business shipping needs — across the globe or around the corner.
-      </p>
-    </div>
-  </section>  
-
-  <section class="py-20" id="services">
-    <div class="container mx-auto max-w-6xl">
-      <h2 class="text-4xl font-bold mb-10 text-center text-gray-900">Our Services</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
-          <i class="fas fa-shipping-fast text-4xl mb-4 text-blue-700"></i>
-          <h3 class="text-xl font-semibold mb-2">Freight Shipping</h3>
-          <p class="text-gray-700">Reliable international & local freight services ensuring on-time delivery.</p>
+      <!-- Footer -->
+      <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto text-center">
+          <p>© 2025 ASTROLinks 47. All rights reserved.</p>
         </div>
-        <div class="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
-          <i class="fas fa-box-open text-4xl mb-4 text-purple-600"></i>
-          <h3 class="text-xl font-semibold mb-2">Warehousing</h3>
-          <p class="text-gray-700">Modern, secure storage facilities with real-time inventory access.</p>
-        </div>
-        <div class="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
-          <i class="fas fa-truck-loading text-4xl mb-4 text-green-600"></i>
-          <h3 class="text-xl font-semibold mb-2">Logistics Management</h3>
-          <p class="text-gray-700">End-to-end logistics and supply chain solutions built for efficiency.</p>
-        </div>
-      </div>
-    </div>
-  </section>  
+      </footer>
 
-  <section class="py-20" id="contact">
-    <div class="container mx-auto max-w-4xl bg-white/70 backdrop-blur-md p-10 rounded-2xl shadow-lg text-center">
-      <h2 class="text-4xl font-bold mb-6 text-gray-900">Need Help?</h2>
-      <p class="text-lg text-gray-700 mb-8">
-        Our support team is always ready to assist. Reach out via Telegram or Email anytime.
-      </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-6">
-        <a href="https://t.me/ASTROTRADEMARKED" target="_blank" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition shadow">
-          <i class="fab fa-telegram-plane mr-2"></i> Chat with us
-        </a>
-        <a href="mailto:andy.ekechi@gmail.com" class="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition shadow">
-          <i class="fas fa-envelope mr-2"></i> Send us an Email
-        </a>
-      </div>
-    </div>
-  </section>   
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-4">
-      <div class="container mx-auto text-center">
-        <p>© 2025 ASTROLinks 47. All rights reserved.</p>
-      </div>
-    </footer>
-  
-    <script>
+      <script>
         const trackingData = {
-          "ASTRO-937X21A": `
-            <div class="space-y-4">
-              <h3 class="text-lg font-semibold text-gray-900">📦 <b>Tracking Code:</b> <code>ASTRO-937X21A</code></h3>
-              <p><b>Recipient Name:</b> Ethan Jones<br/>
-              <b>Name on Package:</b> Ethan Jones<br/>
-              <b>Transit Route:</b> USA → Cranbrook QLD 4814</p>
-      
-              <h4 class="font-semibold mt-4 text-gray-800">📍 Transit Stages:</h4>
-              <ul class="list-none space-y-2 text-sm">
-                <li>1️⃣ 📝 <b>Label Created</b><br/>
-                  <span class="ml-4">📅 Date: Nov 25, 2024 — 🕑 Time: 2:42 PM</span>
-                </li>
-                <li>2️⃣ 🚚 <b>Package Picked Up</b><br/>
-                  <span class="ml-4">📍 LA, Nevada 89109 🇺🇸<br/>
-                  📅 Date: Nov 25 — 🕓 Time: 4:35 PM</span>
-                </li>
-                <li>3️⃣ 🏢 <b>Arrived at Distribution Centre</b><br/>
-                  <span class="ml-4">📍 Harry Reid Intl Airport (LAS)<br/>
-                  📅 Nov 25 — 🕕 6:00 PM<br/>
-                  🚨 Status: Package arrived at center</span>
-                </li>
-                <li>4️⃣ 🛫 <b>Arrived at LAX</b><br/>
-                  <span class="ml-4">📅 Nov 26 — 🕘 9:00 AM</span>
-                </li>
-                <li>5️⃣ 🛬 <b>Departed LAX</b><br/>
-                  <span class="ml-4">📅 Nov 26 — 🕛 12:00 PM</span>
-                </li>
-                <li>6️⃣ ✈️ <b>Arrived in Australia</b><br/>
-                  <span class="ml-4">📍 Brisbane Intl (BNE) 🇦🇺<br/>
-                  📅 Nov 27 — 🕣 8:45 AM</span>
-                </li>
-                <li class="text-red-600 font-semibold">7️⃣ 🚚 <b>Delivery on Hold</b><br/>
-                  <span class="ml-4">Customs re-evaluation due to value discrepancy ❗<br/>
-                  💰 Clearance Fee: $118.90</span>
-                </li>
-              </ul>
-            </div>
-          `,
-      
+          "ASTRO-427P56F": `
+  <div class="space-y-4">
+    <h3 class="text-lg font-semibold text-gray-900">📦 <b>Tracking Code:</b> <code>ASTRO-427P56F</code></h3>
+    <p><b>Recipient Name:</b> Théodore Roy<br/>
+    <b>Name on Package:</b> Théodore Roy<br/>
+    <b>Transit Route:</b> 🇺🇸 USA → 🇫🇷 Osny, France (CDG)</p>
+
+    <h4 class="font-semibold mt-4 text-gray-800">📍 Transit Stages:</h4>
+    <ul class="list-none space-y-2 text-sm">
+      <li>1️⃣ 📝 <b>Label Created</b><br/>
+        <span class="ml-4">📅 Monday, Apr 7, 2025 — 🕑 Time: 9:42 AM</span>
+      </li>
+      <li>2️⃣ 🚚 <b>Package Picked Up</b><br/>
+        <span class="ml-4">📍 Dallas, Texas 🇺🇸<br/>
+        📅 Monday, Apr 7 — 🕓 Time: 1:15 PM</span>
+      </li>
+      <li>3️⃣ 🏢 <b>Arrived at Sorting Facility</b><br/>
+        <span class="ml-4">📍 DFW International Airport (DFW)<br/>
+        📅 Monday, Apr 7 — 🕕 Time: 5:40 PM</span>
+      </li>
+      <li>4️⃣ ✈️ <b>In Transit to France</b><br/>
+        <span class="ml-4">📍 En Route to Paris CDG 🇫🇷<br/>
+        📅 Monday, Apr 7 — 🕘 Estimated Departure: 10:15 PM</span>
+      </li>
+      <li>5️⃣ 🛬 <b>Arrival at Paris CDG (Projected)</b><br/>
+        <span class="ml-4">📍 Charles de Gaulle Airport 🇫🇷<br/>
+        📅 Tuesday, Apr 8 — 🕘 Estimated: 7:25 AM</span>
+      </li>
+      <li>6️⃣ 🚚 <b>Out for Delivery</b><br/>
+        <span class="ml-4">📍 Osny, 95520<br/>
+        📅 Wednesday, Apr 9 — 🕓 Estimated: Between 9:00 AM – 12:30 PM</span>
+      </li>
+      <li class="text-green-700 font-semibold">7️⃣ ✅ <b>Final Delivery ETA</b><br/>
+        <span class="ml-4">📍 Address: 28 Rue Jean Jaurès, Osny 95520<br/>
+        📅 Delivery Expected: Wednesday, Apr 9</span>
+      </li>
+    </ul>
+  </div>
+`,
           "ASTRO-5BNQ2WZ": `
             <div class="space-y-4">
               <h3 class="text-lg font-semibold text-gray-900">📦 <b>Tracking Code:</b> <code>ASTRO-5BNQ2WZ</code></h3>
@@ -175,7 +186,7 @@
               </ul>
             </div>
           `,
-      
+
           "ASTRO-48PVL90": `
             <div class="space-y-4">
               <h3 class="text-lg font-semibold text-gray-900">📦 <b>Tracking Code:</b> <code>ASTRO-48PVL90</code></h3>
@@ -198,16 +209,16 @@
             </div>
           `
         };
-      
+
         const form = document.getElementById("trackingForm");
         const input = document.getElementById("trackingInput");
         const resultDiv = document.getElementById("trackingResult");
-      
+
         form.addEventListener("submit", function (e) {
           e.preventDefault();
           const code = input.value.trim().toUpperCase();
           resultDiv.innerHTML = `<div class="text-gray-600 italic animate-pulse">🔄 Verifying tracking code...</div>`;
-      
+
           setTimeout(() => {
             if (trackingData[code]) {
               resultDiv.innerHTML = trackingData[code];
@@ -217,6 +228,7 @@
           }, 2500);
         });
       </script>
-        
-  </body>
+
+</body>
+
 </html>
