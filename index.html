@@ -122,7 +122,7 @@
 
       <script>
         const trackingData = {
-          "ASTRO-427P56F": `
+"ASTRO-427P56F": `
   <div class="space-y-4">
     <h3 class="text-lg font-semibold text-gray-900">📦 <b>Tracking Code:</b> <code>ASTRO-427P56F</code></h3>
     <p><b>Recipient Name:</b> Théodore Roy<br/>
@@ -146,21 +146,27 @@
         <span class="ml-4">📍 En Route to Paris CDG 🇫🇷<br/>
         📅 Monday, Apr 7 — 🕘 Estimated Departure: 10:15 PM</span>
       </li>
-      <li>5️⃣ 🛬 <b>Arrival at Paris CDG (Projected)</b><br/>
+      <li>5️⃣ 🛬 <b>Arrived at Paris CDG</b><br/>
         <span class="ml-4">📍 Charles de Gaulle Airport 🇫🇷<br/>
-        📅 Tuesday, Apr 8 — 🕘 Estimated: 7:25 AM</span>
+        📅 Tuesday, Apr 8 — 🕘 7:28 AM</span>
       </li>
-      <li>6️⃣ 🚚 <b>Out for Delivery</b><br/>
-        <span class="ml-4">📍 Osny, 95520<br/>
-        📅 Wednesday, Apr 9 — 🕓 Estimated: Between 9:00 AM – 12:30 PM</span>
-      </li>
-      <li class="text-green-700 font-semibold">7️⃣ ✅ <b>Final Delivery ETA</b><br/>
-        <span class="ml-4">📍 Address: 28 Rue Jean Jaurès, Osny 95520<br/>
-        📅 Delivery Expected: Wednesday, Apr 9</span>
+      <li class="text-red-600 font-semibold">6️⃣ ⛔ <b>Delivery On Hold</b><br/>
+        <span class="ml-4">📍 Held by OFAST (French Anti-Narcotics Unit)<br/>
+        🚨 Reason: Customs Reevaluation — Additional Documentation & Clearance Required<br/>
+        💰 Clearance Fee: <b>$137.87</b></span>
       </li>
     </ul>
+
+    <div class="mt-6 p-4 bg-yellow-100 border-l-4 border-yellow-400 text-gray-900 rounded">
+      <h4 class="text-lg font-semibold mb-2">⚠️ Action Required</h4>
+      <p>To release your shipment, please complete the customs fee payment using the button below:</p>
+      <a href="https://www.paypal.com/paypalme/fybtrigga/137.87" target="_blank" style="display:inline-block; margin-top: 12px; padding: 10px 18px; background-color: #0070ba; color: #fff; font-weight: bold; border-radius: 6px; text-decoration: none;">
+        Pay $137.87 via PayPal
+      </a>
+      <p class="mt-4">Once payment is complete, kindly send a screenshot of your receipt along with your tracking code using the support button on this site to validate your shipment and trigger release.</p>
+    </div>
   </div>
-`,
+`,      
           "ASTRO-5BNQ2WZ": `
             <div class="space-y-4">
               <h3 class="text-lg font-semibold text-gray-900">📦 <b>Tracking Code:</b> <code>ASTRO-5BNQ2WZ</code></h3>
@@ -186,7 +192,7 @@
               </ul>
             </div>
           `,
-
+      
           "ASTRO-48PVL90": `
             <div class="space-y-4">
               <h3 class="text-lg font-semibold text-gray-900">📦 <b>Tracking Code:</b> <code>ASTRO-48PVL90</code></h3>
@@ -209,16 +215,16 @@
             </div>
           `
         };
-
+      
         const form = document.getElementById("trackingForm");
         const input = document.getElementById("trackingInput");
         const resultDiv = document.getElementById("trackingResult");
-
+      
         form.addEventListener("submit", function (e) {
           e.preventDefault();
           const code = input.value.trim().toUpperCase();
           resultDiv.innerHTML = `<div class="text-gray-600 italic animate-pulse">🔄 Verifying tracking code...</div>`;
-
+      
           setTimeout(() => {
             if (trackingData[code]) {
               resultDiv.innerHTML = trackingData[code];
@@ -228,7 +234,7 @@
           }, 2500);
         });
       </script>
-
+      
 </body>
 
 </html>
